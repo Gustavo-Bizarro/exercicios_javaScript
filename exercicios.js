@@ -63,3 +63,36 @@ function calcularPerimetro(comprimento,largura){
 
 const perimetro = calcularPerimetro(comprimento,largura);
 console.log(`O perimetro do retangulo é ${perimetro}`)
+
+//5 - Verificação da divisibilidade:
+
+const n1 = 5;
+const n2 = 4;
+
+function divisibilidade( n1 , n2 ){
+    return n1 % n2 === 0;
+}
+const res = divisibilidade (n1 , n2)
+console.log(`O número ${n1} dividio por ${n2} o resto da divisão é 0 ? = ${res}`);
+
+// ESTRUTURA E CONDIÇÕES
+
+// 6 - Classificação de faixa etária 0-12  13-17  18-59  60 ou mais.
+
+const idadeUsuario = 90;
+
+function classificarFaixaEtaria(idade){
+
+  if(idade >= 0 && idade <= 12) {
+    return "Crianção"
+  }else if(idade >= 13 && idade <=17){
+    return "Adolescente"
+  }else if(idade >= 18 && idade <= 59){
+    return "Adulto"
+  }else {
+    return "Terceira idade"
+  }
+}
+const classificação = classificarFaixaEtaria(idadeUsuario)
+console.log(classificação)
+
