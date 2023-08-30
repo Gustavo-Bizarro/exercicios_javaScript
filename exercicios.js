@@ -191,3 +191,34 @@ const numero = 7;
 for (let i = 1; i<=10; i++){
     console.log(`${numero} x ${i} = ${numero * i}`)
 }
+
+// 12 Números primos
+
+const M = 50;
+
+function isPrime(num){
+    if(num < 1){
+        return false;
+    }
+    for(let i = 2; i * i <= num; i++){
+        if(num % i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+for (let i = 2; i <= M; i++){
+    if(isPrime(i)){
+        console.log(i)
+    }
+}
+
+// 13 Exibição de Padroes usando * * *
+
+const X = 20;
+
+for (let i = 1; i <= X; i++){
+    console.log("*".repeat(i))
+}
+
+// 14 - 
