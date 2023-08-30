@@ -96,3 +96,98 @@ function classificarFaixaEtaria(idade){
 const classificação = classificarFaixaEtaria(idadeUsuario)
 console.log(classificação)
 
+// 7 - Comparação de números
+
+const num1 = 4;
+const num2 = 3;
+
+function comp(num1, num2){
+    if(num1 > num2){
+        return "O primeiro número é maior que o segundo"
+    }else if(num1 < num2){
+        return " O segundo número é maior que o primeiro"
+    }else{
+        return "Os números são iguais"
+    }
+}    
+    const respostas = comp(num1, num2);
+    console.log(respostas);
+        
+// 8 - calculadora com switch
+
+const valor1 = 10;
+const valor2 = 15;
+const operador = "-";
+
+function calcular(a, b, operador){
+
+    let resutado
+
+    switch(operador){
+        case "+":
+            resutado = a + b;
+            break;
+        case "-":
+            resutado = a - b;
+            break;
+        case "*":
+            resutado = a * b;
+            break;
+        case "/":
+            resutado = a / b;
+            break;
+            default:
+                return "operador inválido";
+    }
+    return `O resultado da operação é: ${resutado}`
+}
+const resultadoCalculo = calcular(valor1, valor2, operador)
+console.log(resultadoCalculo)
+console.log(calcular(10, 4, "-"));
+console.log(calcular(100, 10, "*"));
+console.log(calcular(5, 10 , "/"));
+console.log(calcular(5, 10 , "854652"))
+
+// 9 - Preço de tarifa com descontos relativos a idade e se for estudante
+
+const idadePassageiro = 22
+const tipoPasse = "estudante"
+
+function calcularTarifa(idade, tipoPasse){
+    const tarifaCheia = 2.50
+
+    if(idade < 6){
+        return "isento de tarifa"
+    }
+    let desconto = 0
+
+    if(tipoPasse === "estudante"){
+        desconto = .5
+    }else if(tipoPasse === "idoso" && idade >=60){
+        desconto = .3
+    }
+    return tarifaCheia * (1 - desconto)
+}
+const tarifa = calcularTarifa(idadePassageiro, tipoPasse);
+console.log(`A tarifa para pessoa com ${idadePassageiro} anos e passe do tipo ${tipoPasse}, a tarifa fica no valor de R$${tarifa.toFixed(2)}`);
+
+//Estruturas de Repetição
+
+// 10 - somatório de 1 a N
+
+const N = 44;
+let soma = 0;
+
+for(let i = 1; i<=N; i++){
+    soma += i
+}
+
+console.log(`A soma dos números de 1 a ${N} é ${soma}`);
+
+// Criar uma tabuada
+
+const numero = 7;
+
+for (let i = 1; i<=10; i++){
+    console.log(`${numero} x ${i} = ${numero * i}`)
+}
