@@ -244,3 +244,9 @@ b = temp + a;
 }
 const sequenciaFibonacci = fibonacciAteN(Z);
 console.log(`A sequência Fibonacci até ${Z} é:`, sequenciaFibonacci);
+
+
+
+
+// Estudos sobre FUNÇÕES começa aqui ******************************************************************
+
