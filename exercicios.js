@@ -221,4 +221,26 @@ for (let i = 1; i <= X; i++){
     console.log("*".repeat(i))
 }
 
-// 14 - 
+// 14 - fibonacci
+
+const Z = 100;
+
+function fibonacciAteN(n){
+
+let a = 0;
+let b = 1;
+
+let sequencia = [];
+
+
+while(a <= n){
+    sequencia.push(a)
+const temp = a;
+a = b;
+b = temp + a;
+ }
+
+ return sequencia;
+}
+const sequenciaFibonacci = fibonacciAteN(Z);
+console.log(`A sequência Fibonacci até ${Z} é:`, sequenciaFibonacci);
