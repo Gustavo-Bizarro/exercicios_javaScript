@@ -1,0 +1,16 @@
+
+/*exercicio 32*/
+
+body{
+    padding-bottom: 500px;
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.ativo{
+    background-color: aqua;
+}
