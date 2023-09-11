@@ -1,6 +1,7 @@
 
 /*exercicio 32*/
 
+
 body{
     padding-bottom: 500px;
 }
@@ -13,4 +14,56 @@ body{
 
 .ativo{
     background-color: aqua;
+}
+
+
+/*exercicio 36*/
+
+.selecionado{
+    background-color: aquamarine;
+}
+
+
+
+/*execicio 37*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(red, green, blue, alpha)0,0,0,0.4;
+}
+
+.modal-content{
+    background-color: #f6ededfe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
+/*exercicio 38 */
+
+.accordion-header{
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+.accordion-content{
+    display: none;
+    padding: 15px;
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-top: none;
 }
