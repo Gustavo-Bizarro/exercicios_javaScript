@@ -25,5 +25,22 @@ function mapearArray(valores, transformacao){
 const numeros = [1, 2, 3, 4, 5]
 const quadrados = mapearArray(numeros, (numero) => numero * numero)
 
-console.log(numeros)
-console.log(quadrados)
+console.log(numeros) // array original, sem modificação
+console.log(quadrados) // resultado do array
+
+// 41 Execução condicional
+
+function executarCondicional (verificar, executar, nãoExecutar){
+
+    if(verificar()) {
+        executar()
+    }else{
+        nãoExecutar()
+    }
+}
+
+executarCondicional(
+    () => 5 > 3,
+    () => console.log("5 é maior que 3"),
+    () => console.log("condição invalida")
+)
